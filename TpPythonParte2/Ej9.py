@@ -4,6 +4,9 @@ def matrizinversa(Matriz):
     matrizI = matrizindetidad1(Matriz)
     for fila in matrizI:
         fila.reverse()
+
+    # for i in range(len(Lista)):
+    # Lista_invertida[i]= str(Lista[len(Lista) - 1 - i])
     return matrizI
 def crear_matriz(Filas, Columnas):
     matriz = [[0 for _ in range(Columnas)] for _ in range(Filas)]

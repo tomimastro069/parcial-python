@@ -8,6 +8,7 @@ Lista_invertida=[None] * cantidaddefilas
 
 for i in range(len(Lista)):
     Lista_invertida[i]= str(Lista[len(Lista) - 1 - i])
+    
 
 print("LISTA ORIGINAL: ")
 for i in range(len(Lista)):
