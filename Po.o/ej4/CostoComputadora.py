@@ -5,7 +5,7 @@ def mostrar(computadora):
     costototal = 0
     for  componente in computadora.listadeobjetosComponenteCPU:
         costototal += componente.precio * componente.cantidad
-        print(f"Componente\tMarca\tCantidad\tPrecio \n {componente.componente} \t\t{componente.marca} \t{componente.cantidad}\t\t{componente.precio}")
+        print(f"Componente\tMarca\tCantidad\tPrecio\n{componente.componente}\t\t{componente.marca}\t{componente.cantidad}\t\t{componente.precio}")
     if costototal < 50000:
         precio_venta = costototal * 1.40  
     else:

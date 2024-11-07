@@ -11,10 +11,13 @@ class MenuRestaurant:
         while True:
 
             nombre = input(f"Ingrese el nombre del plato {j}:\n")
+           
             precio = float(input("ingrese el precio del plato:\n"))
+            while  precio < 0:
+                precio = float(input("ingrese el precio del plato (mayor a 0):\n"))
+
             es_bebida = input("Es bebida? (s/n)")
             es_bebida = es_bebida.lower()
-
             while es_bebida  not in ["s", "n"]:
                 es_bebida = input("Es bebida? (s/n)")
 
@@ -28,6 +31,7 @@ class MenuRestaurant:
             if not es_bebida:
                 i = 1
                 while True:
+
                     IngredienteNombre= input(f"ingrese el ingrediente {i} del plato:\n")
                     cantidad = float(input("Ingrese la cantidad de ingredientes:\n"))
                     unidad_medida = input("Ingrese la unidad de medida: \n")
